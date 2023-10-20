@@ -1,18 +1,15 @@
 :root {
   /* Colors: */
-  --color-blue-crayola-7: #94efff;
-  --color-blue-crayola-6: #7eecff;
-  --color-blue-crayola-1: #29dfff;
-  --color-blue-crayola-3: #3ee2ff;
-  --color-green-crayola-1: #2ce3ac;
-  --color-green-crayola-5: #7effd8;
-  --color-blue-1: #2866ff;
-  --color-rose-2: #ff3e8f;
-  --color-rose-1: #ff2982;
-  --color-orange-1: #f18f01;
-  --color-purple-2: #aa34fd;
-  --white: #ffffff;
-  --black-keos: #000000;
+
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-white: #ebebeb;
+  --color-sky-blue: #7ea1ff;
+  --color-blue: #2866ff;
+  --color-green: #41ad48;
+  --color-orange: #dc3023;
+  --color-yellow: #f18f01;
 }
 
 /*=============================================
@@ -37,9 +34,10 @@ body {
   font-weight: 400;
   visibility: visible;
   font-family: "Cerebri Sans", sans-serif;
-  color: #ebebeb;
+  color: var(--color-light-white);
   position: relative;
-  background-color: var(--black-keos);
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--color-black);
 }
 
 p {
@@ -52,13 +50,13 @@ p {
 
 a {
   text-decoration: none;
-  color: #ebebeb;
+  color: var(--color-light-white);
   transition: 0.4s ease-in-out;
 }
 
-a:hover{
+a:hover, a.active{
   text-decoration: underline;
-  color: var(--color-blue-1);
+  color: var(--color-blue);
 }
 
 .section-space {
@@ -66,8 +64,8 @@ a:hover{
 }
 
 .sl-primary-btn {
-  background-color: var(--color-blue-1);
-  border: 1px solid var(--color-blue-1);
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
   outline: none;
   border-radius: 50px;
   padding: 12px 20px;
@@ -83,7 +81,7 @@ a:hover{
 
 .sl-secondary-btn{
   background-color: transparent;
-  border: 1px solid var(--white);
+  border: 1px solid var(--color-white);
   outline: none;
   border-radius: 25px;
   padding: 6px 20px!important;
@@ -92,8 +90,8 @@ a:hover{
   transition: 0.5s ease-in-out;
 }
 .sl-secondary-btn:hover{
-  background-color: #7ea1ff;
-  border: 1px solid #7ea1ff;
+  background-color: var(--color-sky-blue);
+  border: 1px solid var(--color-sky-blue);
   outline: none;
   border-radius: 25px;
   padding: 6px 20px!important;
@@ -112,16 +110,16 @@ a:hover{
 }
 
 .sl-bg-yellow {
-  background-color: var(--color-orange-1);
+  background-color: var(--color-yellow);
 }
 .sl-bg-green {
-  background-color: #41ad48;
+  background-color: var(--color-green);
 }
 .sl-bg-sky-blue {
-  background-color: #7ea1ff;
+  background-color: var(--color-sky-blue);
 }
 .sl-bg-red {
-  background-color: #dc3023;
+  background-color: var(--color-orange);
 }
 .sl-bg-dark-gradient {
   background: linear-gradient(180deg, #262525 0%, #171819 100%);
@@ -138,7 +136,7 @@ a:hover{
   z-index: 1000;
   transition: .32s;
   z-index: 999;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .keos-navbar {
@@ -170,7 +168,7 @@ a:hover{
 }
 
 .form-shares-content .content-title span {
-  color: #7ea1ff;
+  color: var(--color-sky-blue);
 }
 
 .form-shares-content ul {
@@ -197,7 +195,7 @@ a:hover{
 
 .card-item h3,
 .dots-card h3 {
-  color: #7ea1ff;
+  color: var(--color-sky-blue);
   text-align: center;
   margin-top: 2rem;
   font-size: 1.4rem;
@@ -217,7 +215,7 @@ a:hover{
 }
 
 .form-template > .content-title > span {
-  color: #7ea1ff;
+  color: var(--color-sky-blue);
 }
 
 .dots-card {
@@ -226,7 +224,7 @@ a:hover{
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 1px solid #7ea1ff;
+  border: 1px solid var(--color-sky-blue);
   border-radius: 15px;
 }
 
@@ -265,7 +263,7 @@ a:hover{
 }
 
 .features-section-title {
-  background-color: #7ea1ff;
+  background-color: var(--color-sky-blue);
   display: inline;
   padding: 7px 25px;
   border-radius: 35px;
