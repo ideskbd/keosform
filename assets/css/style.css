@@ -132,17 +132,16 @@ a:hover{
 =============================================*/
 
 #header-menu {
-  /* position: fixed;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  transition: position 0.5s ease;
-  z-index: 999; */
+  transition: .32s;
+  z-index: 999;
   background-color: #000000;
 }
 
 .keos-navbar {
-  border-bottom: 1px solid rgb(78, 78, 78);
   padding: 50px 0px;
 }
 
@@ -150,7 +149,9 @@ a:hover{
   border-radius: 40px;
   padding: 10px 20px;
 }
-
+.keos-navbar-menu{
+  align-items: center;
+}
 .keos-navbar > nav > .navbar-brand {
   font-weight: 900 !important;
 }

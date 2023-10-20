@@ -6,6 +6,13 @@
   .section-space {
     padding: 1rem 0rem;
   }
+
+  .keos-navbar-menu{
+    align-items: normal;
+  }
+  .keos-navbar-menu .sl-secondary-btn{
+    margin: 10px 0px;
+  }
   /*=============================================
 =             03. Footer CSS                 =
 =============================================*/
