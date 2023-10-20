@@ -313,3 +313,11 @@ a:hover{
 .social ul li:first-child {
   margin: 0;
 }
+
+.footer-bottom p{
+  font-size: 14px;
+}
+.partner img{
+  max-width: 70px;
+  margin-right: 20px;
+}
