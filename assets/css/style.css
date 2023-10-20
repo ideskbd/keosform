@@ -81,6 +81,26 @@ a:hover{
   -moz-box-shadow: 5px 6px 20px 1px rgba(148, 147, 147, 0.338);
 }
 
+.sl-secondary-btn{
+  background-color: transparent;
+  border: 1px solid var(--white);
+  outline: none;
+  border-radius: 25px;
+  padding: 6px 20px!important;
+  margin: 0px 10px;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+.sl-secondary-btn:hover{
+  background-color: #7ea1ff;
+  border: 1px solid #7ea1ff;
+  outline: none;
+  border-radius: 25px;
+  padding: 6px 20px!important;
+  margin: 0px 10px;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
 .content-title {
   text-transform: uppercase;
   font-size: 2rem;
