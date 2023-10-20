@@ -1,18 +1,17 @@
 :root {
-
   /* Colors: */
-  --color-blue-crayola-7: #94EFFF;
-  --color-blue-crayola-6: #7EECFF;
-  --color-blue-crayola-1: #29DFFF;
-  --color-blue-crayola-3: #3EE2FF;
-  --color-green-crayola-1: #2CE3AC;
-  --color-green-crayola-5: #7EFFD8;
-  --color-blue-1: #2866FF;
-  --color-rose-2: #FF3E8F;
-  --color-rose-1: #FF2982;
-  --color-orange-1: #F18F01;
-  --color-purple-2: #AA34FD;
-  --white: #FFFFFF;
+  --color-blue-crayola-7: #94efff;
+  --color-blue-crayola-6: #7eecff;
+  --color-blue-crayola-1: #29dfff;
+  --color-blue-crayola-3: #3ee2ff;
+  --color-green-crayola-1: #2ce3ac;
+  --color-green-crayola-5: #7effd8;
+  --color-blue-1: #2866ff;
+  --color-rose-2: #ff3e8f;
+  --color-rose-1: #ff2982;
+  --color-orange-1: #f18f01;
+  --color-purple-2: #aa34fd;
+  --white: #ffffff;
   --black-keos: #000000;
 }
 
@@ -37,8 +36,8 @@ body {
   font-style: normal;
   font-weight: 400;
   visibility: visible;
-  font-family: 'Cerebri Sans', sans-serif;
-  color: #EBEBEB;
+  font-family: "Cerebri Sans", sans-serif;
+  color: #ebebeb;
   position: relative;
   background-color: var(--black-keos);
 }
@@ -49,6 +48,17 @@ p {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #ebebeb;
+  transition: 0.4s ease-in-out;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: var(--color-blue-1);
 }
 
 .section-space {
@@ -77,8 +87,24 @@ p {
   line-height: 45px;
 }
 
-.content-title>span {
+.content-title > span {
   font-weight: 800;
+}
+
+.sl-bg-yellow {
+  background-color: var(--color-orange-1);
+}
+.sl-bg-green {
+  background-color: #41ad48;
+}
+.sl-bg-sky-blue {
+  background-color: #7ea1ff;
+}
+.sl-bg-red {
+  background-color: #dc3023;
+}
+.sl-bg-dark-gradient {
+  background: linear-gradient(180deg, #262525 0%, #171819 100%);
 }
 
 /*=============================================
@@ -98,16 +124,14 @@ p {
 .keos-navbar {
   border-bottom: 1px solid rgb(78, 78, 78);
   padding: 50px 0px;
-  ;
 }
 
-.keos-navbar>nav {
+.keos-navbar > nav {
   border-radius: 40px;
   padding: 10px 20px;
-  ;
 }
 
-.keos-navbar>nav>.navbar-brand {
+.keos-navbar > nav > .navbar-brand {
   font-weight: 900 !important;
 }
 
@@ -129,7 +153,7 @@ p {
 }
 
 .form-shares-content .content-title span {
-  color: #7EA1FF;
+  color: #7ea1ff;
 }
 
 .form-shares-content ul {
@@ -149,12 +173,14 @@ p {
   border-radius: 15px;
 }
 
-.card-item img, .dots-card img {
+.card-item img,
+.dots-card img {
   width: 80px;
 }
 
-.card-item h3 , .dots-card h3{
-  color: #7EA1FF;
+.card-item h3,
+.dots-card h3 {
+  color: #7ea1ff;
   text-align: center;
   margin-top: 2rem;
   font-size: 1.4rem;
@@ -168,15 +194,14 @@ p {
   margin-top: 15px;
 }
 
-.form-template>.content-title {
+.form-template > .content-title {
   text-transform: capitalize;
   text-align: center;
 }
 
-.form-template>.content-title>span {
-  color: #7EA1FF;
+.form-template > .content-title > span {
+  color: #7ea1ff;
 }
-
 
 .dots-card {
   display: flex;
@@ -184,15 +209,107 @@ p {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 1px solid #7EA1FF;
+  border: 1px solid #7ea1ff;
   border-radius: 15px;
 }
-
 
 .card-item img {
   width: 80px;
 }
 
 .dots-card h3 {
-margin-top: 10px;
+  margin-top: 10px;
+}
+
+.guide-card {
+  background: linear-gradient(180deg, #262525 0%, #171819 100%);
+  min-height: 200px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.guide-card .content p {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+.sl-badge {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 2px 12px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.features-section-title {
+  background-color: #7ea1ff;
+  display: inline;
+  padding: 7px 25px;
+  border-radius: 35px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.features-btn {
+  border: 0;
+  outline: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.features-card h5,
+.features-card p {
+  margin-left: 20px;
+}
+.features-card p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.features-btn svg {
+  fill: white;
+}
+
+/*=============================================
+=             03. Footer CSS                 =
+=============================================*/
+#footer {
+  background-color: #070707;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 15px;
+}
+
+.social p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.social ul {
+  list-style-type: none;
+}
+.social ul li {
+  margin: 0 5px;
+  display: inline;
+  font-size: 15px;
+}
+
+.social ul li svg {
+  fill: white;
+}
+
+.social ul li:first-child {
+  margin: 0;
 }
