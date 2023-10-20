@@ -33,7 +33,7 @@ body {
   font-family: "Cerebri Sans", sans-serif;
   color: var(--color-light-white);
   position: relative;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   background-color: var(--color-black);
 }
 
@@ -51,7 +51,8 @@ a {
   transition: 0.4s ease-in-out;
 }
 
-a:hover, a.active{
+a:hover,
+a.active {
   text-decoration: underline;
   color: var(--color-blue);
 }
@@ -76,30 +77,31 @@ a:hover, a.active{
   -moz-box-shadow: 5px 6px 20px 1px rgba(148, 147, 147, 0.338);
 }
 
-.sl-secondary-btn{
+.sl-secondary-btn {
   background-color: transparent;
   border: 1px solid var(--color-white);
   outline: none;
   border-radius: 25px;
-  padding: 6px 20px!important;
+  padding: 6px 20px !important;
   margin: 0px 10px;
   font-weight: 600;
   transition: 0.5s ease-in-out;
 }
-.sl-secondary-btn:hover{
+.sl-secondary-btn:hover {
   background-color: var(--color-sky-blue);
   border: 1px solid var(--color-sky-blue);
   outline: none;
   border-radius: 25px;
-  padding: 6px 20px!important;
+  padding: 6px 20px !important;
   margin: 0px 10px;
   font-weight: 600;
   transition: 0.5s ease-in-out;
 }
 .content-title {
   text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 45px;
+  font-size: 60px;
+  font-weight: 600;
+  /* line-height: 45px; */
 }
 
 .content-title > span {
@@ -122,6 +124,21 @@ a:hover, a.active{
   background: linear-gradient(180deg, #262525 0%, #171819 100%);
 }
 
+.section-title {
+  font-size: 75px;
+  font-weight: 600;
+}
+.section-title span {
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--color-sky-blue);
+}
+
+.section-content {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 35px;
+}
 /*=============================================
 =             01. Navbar CSS                 =
 =============================================*/
@@ -131,7 +148,7 @@ a:hover, a.active{
   width: 100%;
   top: 0;
   z-index: 1000;
-  transition: .32s;
+  transition: 0.32s;
   z-index: 999;
   background-color: var(--color-black);
 }
@@ -144,7 +161,7 @@ a:hover, a.active{
   border-radius: 40px;
   padding: 10px 20px;
 }
-.keos-navbar-menu{
+.keos-navbar-menu {
   align-items: center;
 }
 .keos-navbar > nav > .navbar-brand {
@@ -154,12 +171,30 @@ a:hover, a.active{
 /*=============================================
 =             02. Home Page (Banner) CSS                 =
 =============================================*/
+.banner-content .content-title {
+  font-size: 66px;
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: -3px;
+}
+.banner-content .content-title span {
+  font-size: 68px;
+  font-weight: bold;
+  opacity: 1;
+}
 .banner-content p.content {
   margin-top: 2rem;
   font-size: 18px;
   opacity: 0.8;
 }
 
+.banner-img {
+  position: relative;
+  overflow: hidden;
+  top: -25px;
+  width: 550px;
+  z-index: 100;
+}
 .form-shares-content img {
   max-width: 240px;
 }
@@ -173,6 +208,11 @@ a:hover, a.active{
   margin-left: 1rem;
   line-height: 35px;
   opacity: 0.9;
+  padding: 0px 20px;
+}
+.form-shares-content ul li {
+  font-size: 30px;
+  margin: 10px 0;
 }
 
 .card-item {
@@ -262,10 +302,10 @@ a:hover, a.active{
 .features-section-title {
   background-color: var(--color-sky-blue);
   display: inline;
-  padding: 7px 25px;
+  padding: 10px 25px;
   border-radius: 35px;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 51px;
 }
 .features-btn {
   border: 0;
@@ -326,30 +366,83 @@ a:hover, a.active{
   margin: 0;
 }
 
-.footer-bottom p{
+.footer-bottom p {
   font-size: 14px;
 }
-.partner img{
+.partner img {
   max-width: 70px;
   margin-right: 20px;
 }
 
-
 /*=============================================
 =             03. Responsive CSS             =
 =============================================*/
+@media only screen and (max-width: 1024px) {
+  .banner-content .content-title {
+    font-size: 48px;
+    letter-spacing: 0px;
+  }
+  .banner-content .content-title span {
+    font-size: 55px;
+  }
+  .banner-content p.content {
+    margin-top: 2rem;
+    font-size: 18px;
+    opacity: 0.8;
+  }
 
-@media only screen and (max-width: 767px) {
+  .banner-img {
+    position: relative;
+    overflow: hidden;
+    top: -25px;
+    width: 480px;
+    z-index: 100;
+  }
+
+  .content-title {
+    font-size: 48px;
+  }
+  .form-shares-content ul li {
+    font-size: 24px;
+  }
+  .section-title {
+    font-size: 60px;
+  }
+  .section-title span {
+    font-size: 65px;
+  }
+  .section-content {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   p {
     font-size: 14px;
   }
   .content-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .section-space {
     padding: 1rem 0rem;
   }
+
+  .section-title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .section-title span {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-sky-blue);
+  }
+
+  .section-content {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .keos-navbar {
     padding: 20px 0px;
   }
@@ -359,6 +452,21 @@ a:hover, a.active{
   }
   .keos-navbar-menu .sl-secondary-btn {
     margin: 10px 0px;
+  }
+
+  .banner-img {
+    position: static;
+    max-width: 100%;
+  }
+
+  .banner-content .content-title {
+    font-size: 35px;
+    opacity: 0.9;
+    letter-spacing: 0px;
+  }
+  .banner-content .content-title span {
+    font-size: 40px;
+    opacity: 1;
   }
 
   .guide-card {
