@@ -43,6 +43,17 @@ body {
   background-color: var(--black-keos);
 }
 
+p {
+  font-size: 18px;
+  opacity: 0.9;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.section-space {
+  padding: 3rem 0rem;
+}
 
 .sl-primary-btn {
   background-color: var(--color-blue-1);
@@ -113,9 +124,10 @@ body {
   margin-top: 3rem;
 }
 
-.form-shares-content img{
+.form-shares-content img {
   max-width: 240px;
 }
+
 .form-shares-content .content-title span {
   color: #7EA1FF;
 }
@@ -125,4 +137,62 @@ body {
   margin-left: 1rem;
   line-height: 35px;
   opacity: 0.9;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #7ea0ff52;
+  border-radius: 15px;
+}
+
+.card-item img, .dots-card img {
+  width: 80px;
+}
+
+.card-item h3 , .dots-card h3{
+  color: #7EA1FF;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.card-item p {
+  font-size: 16px;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-top: 15px;
+}
+
+.form-template>.content-title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.form-template>.content-title>span {
+  color: #7EA1FF;
+}
+
+
+.dots-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #7EA1FF;
+  border-radius: 15px;
+}
+
+
+.card-item img {
+  width: 80px;
+}
+
+.dots-card h3 {
+margin-top: 10px;
 }
