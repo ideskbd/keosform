@@ -1,7 +1,4 @@
 :root {
-  /* Colors: */
-
-
   --color-black: #000000;
   --color-white: #ffffff;
   --color-light-white: #ebebeb;
@@ -41,7 +38,7 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.9;
   font-weight: 500;
   letter-spacing: 1px;
@@ -306,10 +303,10 @@ a:hover, a.active{
   list-style-type: none;
   display: inline-flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .social p {
-  font-size: 16px;
   margin-left: 10px;
 }
 .social ul {
@@ -335,4 +332,54 @@ a:hover, a.active{
 .partner img{
   max-width: 70px;
   margin-right: 20px;
+}
+
+
+/*=============================================
+=             03. Responsive CSS             =
+=============================================*/
+
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+  }
+  .content-title {
+    font-size: 1.4rem;
+  }
+
+  .section-space {
+    padding: 1rem 0rem;
+  }
+  .keos-navbar {
+    padding: 20px 0px;
+  }
+
+  .keos-navbar-menu {
+    align-items: normal;
+  }
+  .keos-navbar-menu .sl-secondary-btn {
+    margin: 10px 0px;
+  }
+
+  .guide-card {
+    min-height: 120px;
+  }
+
+  .footer-menu ul {
+    list-style-type: none;
+    display: block;
+    margin-left: -10px;
+    line-height: 35px;
+    margin-top: 30px;
+  }
+  .footer-menu ul li {
+    list-style-type: none;
+    display: block;
+    margin-left: -10px;
+  }
+
+  .partner img {
+    max-width: 45px;
+    margin-right: 20px;
+  }
 }
