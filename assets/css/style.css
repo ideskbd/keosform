@@ -215,6 +215,10 @@ a.active {
   margin: 10px 0;
 }
 
+.con_form_list {
+  margin-left: 4rem !important;
+}
+
 .card-item {
   display: flex;
   flex-direction: column;
@@ -227,7 +231,8 @@ a.active {
 
 .card-item img,
 .dots-card img {
-  width: 80px;
+  width: 90px;
+  margin-top: 20px;
 }
 
 .card-item h3,
@@ -251,6 +256,9 @@ a.active {
   text-align: center;
 }
 
+.custom-content-title {
+  text-transform: none !important;
+}
 .form-template > .content-title > span {
   color: var(--color-sky-blue);
 }
@@ -262,7 +270,8 @@ a.active {
   align-items: center;
   padding: 20px;
   border: 1px solid var(--color-sky-blue);
-  border-radius: 15px;
+  border-radius: 50px;
+  box-shadow: 0 0.125rem 0.25rem #7ea1ff !important;
 }
 
 .card-item img {
@@ -271,6 +280,8 @@ a.active {
 
 .dots-card h3 {
   margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .guide-card {
@@ -299,6 +310,9 @@ a.active {
   font-size: 15px;
 }
 
+.features-card {
+  min-height: 155px;
+}
 .features-section-title {
   background-color: var(--color-sky-blue);
   display: inline;
@@ -310,6 +324,7 @@ a.active {
 .features-btn {
   border: 0;
   outline: 0;
+  padding: 10px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -431,6 +446,10 @@ a.active {
   .section-title {
     font-size: 35px;
     font-weight: 600;
+  }
+
+  .con_form_list {
+    margin-left: 1rem !important;
   }
   .section-title span {
     font-size: 40px;
