@@ -217,6 +217,21 @@ a.active {
 
 .con_form_list {
   margin-left: 4rem !important;
+  list-style-type: none;
+}
+.con_form_list li{
+ line-height: 45px;
+ position: relative;
+}
+.con_form_list li::before{
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--color-sky-blue);
+  position: absolute;
+  left: -25px;
+  top: 18px;
 }
 
 .card-item {
